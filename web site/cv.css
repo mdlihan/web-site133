@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.contener{
+    max-width: 900px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+header{
+
+}
+.pictur{
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    float: left;
+}
+.name{
+    float: left;
+   
+}
+h1,h2,h3,h4,h5,h6{
+   color: #11999e;
+}
+.contact{
+  float: right;
+ 
+}
+.contact a{
+    color: #11999e;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: underline;
+    color:tomato;
+
+}
+.div-clear{
+    clear: both;
+}
+hr{
+    border: 3px solid black;
+    width: 100%;
+    border-bottom:none;
+    margin: auto;
+}
+#information{
+
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float:left;
+    width: 70%;
+}
+.common-hr{
+     border: 1px solid black;
+     margin: 15px auto;
+     border-bottom: none;
+     width: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: aqua;
+}
+.educationleft{
+    float:left;
+    width:35%
+
+}
+.educationright{
+    float: right;
+    width: 35%;
+
+}
+.fotter{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    background-color: black;
+    width:auto;
+
+}
+.fotter a{
+    color: white;
+    margin: 20px;
+}
+.fotter p{
+    color: aqua;
+    font-size: 20px;
+}
+.fotter a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.channel{
+font-size: 30px;
+text-align: center;
+}
+.position{
+    position: fixed;
+    border: 2px solid gray;
+    left: 20px;
+    padding: 5px;
+}

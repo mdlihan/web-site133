@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    height: 90px;
+    width: 90px;
+}
+h1{
+   font-size: 2.5rem;
+   text-align: center;
+}
+h2{
+    font-size: 2.1rem;
+    text-align: center;
+}
+.nav-header h1{
+    margin: 0;
+    margin-top: 10px;
+    color: bisque;
+}
+a{
+   font-size: 1.2rem;
+   text-decoration: none;
+   color:white;
+   background-color: #12b6c2;
+   
+}
+.md{
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.nav-manu a{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.nav-manu a:hover{
+    background-color: gray;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+        width: 100%;
+}
+.navbar::after{
+   content: " ";
+   clear: both;
+   display: table;
+}
+.navbar{
+    background-color:#40868b;
+    padding:7px 1px;
+    text-align: center;
+}
+/* profile start */
+.p-header h1{
+    font-family:Cursive;
+    text-align: center;
+}
+.profile{
+  padding:110px 8px;
+  text-align: center;
+  position: relative;
+}
+.top-img{
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    transition:2s;
+}
+.top-img:hover{
+    transform: rotate(360deg);
+}
+.bottom-img{
+    position: absolute;
+    left: 30px;
+    bottom: 8px;
+   transition: 2s;
+}
+.bottom-img:hover{
+    transform: rotate(360deg);
+}
+/* profile end */
+
+/* about me start */
+.dotted-hr{
+ border: dotted 6px;
+ width: 130px;
+ margin-top: -15px;
+ border-bottom: none;
+}
+    .about-me::after{
+         content: " ";
+         clear: both;
+         display: table;
+    }
+    .about-me2 p{
+     text-align: center;
+    }
+    .about-me2 a:hover{
+         background-color:blue;
+    }
+    .about-me-img img{
+        height: 230px;
+        width: 200px;
+        border-radius: 50%;   
+        border: 4px solid white;
+        margin-top: 125px;
+        margin-left: 130px;
+    }
+    
+    .about-me{
+        background-color: rgb(0, 174, 255);
+        color: white;
+        padding: 10px 5px;
+    }
+    .cv{
+        background-color: rgb(207, 207, 209);
+        border:solid gray;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .cv:hover{
+        background-color: black;
+        color: white;
+    }
+/* about me end */
+/* professional experience start*/
+.professional-experience{
+    padding:1% 0%;
+    background-color: bisque;
+}
+.icon{
+    text-align: center;
+   
+}
+.icon img{
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 10px;
+}
+h2{
+    background-color: rgb(73, 72, 72);
+    font-size: 1.9rem;
+}
+.card{
+    background-color:gray;
+    border-radius: 5px;
+    padding: 10px;
+    height: 620px;
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+.descreption{
+    padding: 5px;
+}
+.skills-contanar li{
+   font-size: 20px;
+   padding: 20px 0px;
+   list-style-type: none;
+   font-weight: bold;
+   position: relative;
+}
+.skills-contanar li::before{
+   content: " ";
+   position: absolute;
+   background-color: #b6f3f5;
+   width: 100%;
+   height: 10px;
+   border-radius: 10px;
+   top: calc(100% + 2px);
+   left: 0;
+ }
+ .skills-contanar li::after{
+    content: " ";
+    position: absolute;
+    background-color: #212ff1;
+    width: 0;
+    height: 10px;
+    border-radius: 10px;
+    top: calc(100% + 2px);
+    left: 0;
+    
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .skills-contanar li.html::after{
+    animation-name: html;
+}
+
+
+@keyframes html{
+    to{
+        width: 96%;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+.skills-contanar li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 85%;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+.skills-contanar li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 76%;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+.skills-contanar li.python::after{
+    animation-name: python;
+}
+
+@keyframes python{
+    to{
+        width: 100%;
+        background-color:rgb(5, 160, 5);
+    }
+}
+
+.skills-contanar li.jb::after{
+    animation-name: jb;
+}
+
+@keyframes jb{
+    to{
+        width: 60%;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+.skills-contanar li.c::after{
+    animation-name: c;
+}
+
+@keyframes c{
+    to{
+        width: 90%;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+.professional-experience::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+/* professional experience nd*/
+/* achievement-contact start*/
+.achievement-contact{
+    padding: 1% 4%;
+    background-color:rgb(24, 131, 131);
+    color: white;
+    text-align: center;
+}
+
+
+.contact-me input,textarea{
+    padding: 10px 2px;
+    text-align: left;
+    margin-top: 10px;
+    resize: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact-me button{
+border-radius: 10px;
+height: 40px;
+width: 60px;
+margin: 10px;
+}
+.contact-me button:hover{
+    background-color: #03edfd;
+}
+.more-way{
+    text-align: center;
+}
+.more-btn .btn{
+    border: none;
+    font-size: 28px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.more-btn .btn:hover{
+  background-color: gray;
+}
+.more-btn{
+  margin-top: 50px;
+}
+.achievement-contact::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+/* achievement-contact end*/
+
+/* footer start */
+ .footer-md{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+ }
+ .footer a:hover{
+    color: gray;
+ }
+ .footer a{
+    background-color: black;
+    margin: 10px 0px;
+    display: block;
+    font-size: 1.1rem;
+ }
+  .unicord{
+  color: red;
+  font-size: 25px;
+  }
+/* footer end */
